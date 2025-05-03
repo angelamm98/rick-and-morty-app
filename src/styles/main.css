@@ -1,0 +1,25 @@
+body {
+    background-color: #A3D04F;
+    margin: 0;
+    font-family: 'Bangers', cursive;
+    color: #1b1b1b;
+  }
+  
+.container {
+    padding: 2rem;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.card h5,
+.card p {
+    margin: 0.5rem 0;
+}
