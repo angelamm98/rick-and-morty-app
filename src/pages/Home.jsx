@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/App.css"; 
 
 const Home = () => {
     const {
@@ -17,11 +18,12 @@ const Home = () => {
     if (loading) return <p className="text-center mt-4">Cargando personajes...</p>;
 
     return (
-        <div className="container">
+        <div className="container-fluid" style={{ backgroundColor: "#E89AC7", minHeight: "100vh", padding: "2rem" }}>
+        <h2 className="text-white mb-4">Personajes</h2>
             <div className="row justify-content-center">
                 {characters.map((char) => (
                     <div key={char.id} className="col-6 col-md-4 col-lg-3 mb-4">
-                        <div className="card h-100 shadow-sm">
+                        <div className="card h-100 shadow-sm character-card">
                             <img
                                 src={char.image}
                                 alt={char.name}
